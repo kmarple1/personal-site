@@ -23,7 +23,10 @@
     "test": "jest"
   },
   "dependencies": {
+    "@floating-ui/react": "^0.26.22",
+    "@heroicons/react": "^2.1.5",
     "next": "14.2.5",
+    "next-themes": "^0.3.0",
     "react": "^18",
     "react-dom": "^18"
   },
@@ -31,6 +34,7 @@
     "@babel/core": "^7.25.2",
     "@commitlint/cli": "^19.4.0",
     "@commitlint/config-conventional": "^19.2.2",
+    "@svgr/webpack": "^8.1.0",
     "@testing-library/dom": "^10.4.0",
     "@testing-library/react": "^16.0.0",
     "@types/babel__core": "^7",
@@ -39,6 +43,7 @@
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "babel-jest": "^29.7.0",
+    "daisyui": "^4.12.10",
     "eslint": "^8",
     "eslint-config-next": "14.2.5",
     "eslint-config-prettier": "^9.1.0",
