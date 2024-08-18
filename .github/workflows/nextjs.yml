@@ -53,7 +53,7 @@ jobs:
         with:
           node-version: "20"
       - run: |
-          corepack enable
+          corepack enable yarn@4.4.0
           pnpm --version
       - name: Setup Pages
         uses: actions/configure-pages@v5
