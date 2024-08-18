@@ -14,12 +14,12 @@ const Header = () => {
         <Link className="pl-4" href="https://www.linkedin.com/in/kylemarple/" target="_blank">
           <LinkedInIcon alt="LinkedIn" className="size-6 fill-base-content" />
         </Link>
-        <Link className="pl-4" href="https://github.com/kmarple1" target="_blank">
-          <GithubIcon alt="github" className="size-6 fill-base-content" />
-        </Link>
       </div>
       <div className="flex justify-between">
         <ModeSelect />
+        <Link className="pl-4" href="https://github.com/kmarple1/personal-site" target="_blank">
+          <GithubIcon alt="github" className="size-6 fill-base-content" />
+        </Link>
       </div>
     </header>
   );

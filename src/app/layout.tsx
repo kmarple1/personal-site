@@ -29,7 +29,7 @@ export default function RootLayout({
         <ThemeProvider>
           <div className="min-w-screen flex min-h-screen flex-col bg-base-100 text-base-content">
             <Header />
-            <div className="flex w-full grow">{children}</div>
+            <main className="flex w-full grow p-4">{children}</main>
           </div>
         </ThemeProvider>
       </body>
