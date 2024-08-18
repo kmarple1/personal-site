@@ -27,9 +27,9 @@ export default function RootLayout({
           document.documentElement.classList.add(theme)
         `}</Script>
         <ThemeProvider>
-          <div className="min-w-screen flex min-h-screen flex-col bg-base-100 text-base-content">
+          <div className="flex h-full w-full flex-col bg-base-100 text-base-content">
             <Header />
-            <main className="flex w-full grow p-4">{children}</main>
+            <main className="max-w-8x1 mx-auto flex grow p-4 sm:px-6 md:px-8">{children}</main>
           </div>
         </ThemeProvider>
       </body>
