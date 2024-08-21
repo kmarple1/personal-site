@@ -1,9 +1,17 @@
+/**
+ * Responsive Header
+ *
+ * This component will show centered links when viewed on a larger screen. However,
+ * when viewed on a small screen, the centered links will be replaced by a hamburger menu.
+ */
 "use client";
 
+import dynamic from "next/dynamic";
 import Link from "next/link";
 import { Bars3Icon } from "@heroicons/react/20/solid";
-import ModeSelect from "../modeSelect/modeSelect";
 import GithubIcon from "./github-mark.svg";
+
+const ModeSelect = dynamic(() => import("../modeSelect/modeSelect"), { ssr: false });
 
 const navItems = [
   {
@@ -21,10 +29,10 @@ const Header = () => {
     ));
 
   return (
-    <div className="navbar border-b bg-base-100">
+    <div className="navbar sticky top-0 z-50 border-b bg-base-100/50 backdrop-blur">
       <div className="navbar-start">
         <div className="dropdown">
-          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+          <div aria-label="Menu" className="btn btn-ghost lg:hidden" role="button" tabIndex={0}>
             <Bars3Icon className="size-6" />
           </div>
           <ul

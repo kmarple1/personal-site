@@ -19,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={inter.className}>
+      <body className={`antialiased ${inter.className}`}>
         {/* next-themes uses the color-scheme CSS property to differentiate light and dark themes,
         but Tailwind is watching for a CSS class. */}
         <Script id="theme-detector">{`
@@ -29,7 +29,9 @@ export default function RootLayout({
         <ThemeProvider>
           <div className="flex h-full w-full flex-col bg-base-100 text-base-content">
             <Header />
-            <main className="max-w-8x1 mx-auto flex grow p-4 sm:px-6 md:px-8">{children}</main>
+            <div className="w-full">
+              <main className="mx-auto max-w-8xl p-4 sm:px-6 md:px-8">{children}</main>
+            </div>
           </div>
         </ThemeProvider>
       </body>
