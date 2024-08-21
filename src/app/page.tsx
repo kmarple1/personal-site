@@ -1,15 +1,18 @@
 import Image from "next/image";
+import KMHeadshot from "./km-headshot.jpg";
 
 const Home = () => {
   return (
     <>
       <div className="hero mx-auto mb-6 h-fit w-fit justify-self-center bg-base-200">
         <div className="hero-content text-center">
-          <div className="max-w-md">
-            <h1 className="text-5xl font-bold">Hello!</h1>
-            Welcome to my personal playground and portfolio. I will be using this site both to keep my skills sharp and
-            to show off the technologies that I am proficient with. Please keep in mind that I am not a UX designer, so
-            this is mainly a tech demo.
+          <div className="prose max-w-md">
+            <h1>Hello!</h1>
+            <p>
+              Welcome to my personal playground and portfolio. I will be using this site both to keep my skills sharp
+              and to show off the technologies that I am proficient with. Please keep in mind that I am not a UX
+              designer, so this is mainly a tech demo.
+            </p>
           </div>
         </div>
       </div>
@@ -17,7 +20,7 @@ const Home = () => {
         <section className="prose max-w-prose pb-8">
           <h2>About Me</h2>
           <p>
-            <Image alt="Kyle Marple" className="float-right ml-4" src="/km-headshot.jpg" height="128" width="256" />
+            <Image alt="Kyle Marple" className="float-right ml-4" src={KMHeadshot} height="256" width="256" />
             My name is Kyle Marple, and until recently I was a staff software engineer at Walmart Global Tech. I am
             currently looking for a new role as either a senior or staff frontend software engineer. At this time, I am
             considering only fully remote, full-time positions. Please do not contact me regarding part-time, contract
@@ -47,9 +50,9 @@ const Home = () => {
           <p>
             This site is a React app being deployed to Github Pages. The full source code is available in its git
             repository, accessible by clicking the Github icon in the right side of the header. Among other things, this
-            site has been designed mobile-first and is fully responsive. Feel free to try it in a variety of different
-            sizes. It also full support for light- and dark-mode themes, which can be switched from the header. The
-            major packages and frameworks used are listed below:
+            site has been designed mobile-first and is fully responsive and screen-reader accessible. Feel free to try
+            it in a variety of different sizes. It also full support for light- and dark-mode themes, which can be
+            switched from the header. The major packages and frameworks used are listed below:
           </p>
           <p>Core</p>
           <ul>
