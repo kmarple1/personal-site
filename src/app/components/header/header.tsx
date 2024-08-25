@@ -9,7 +9,7 @@
 import dynamic from "next/dynamic";
 import Link from "next/link";
 import { Bars3Icon } from "@heroicons/react/20/solid";
-import GithubIcon from "./github-mark.svg";
+import GithubIcon from "../../images/github-mark.svg";
 
 const ModeSelect = dynamic(() => import("../modeSelect/modeSelect"), { ssr: false });
 

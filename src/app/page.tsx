@@ -1,5 +1,5 @@
 import Image from "next/image";
-import KMHeadshot from "./km-headshot.jpg";
+import KMHeadshot from "./images/km-headshot.jpg";
 
 const Home = () => {
   return (
@@ -20,7 +20,7 @@ const Home = () => {
         <section className="prose max-w-prose pb-8">
           <h2>About Me</h2>
           <p>
-            <Image alt="Kyle Marple" className="float-right ml-4" src={KMHeadshot} height="256" width="256" />
+            <Image alt="photo of Kyle Marple" className="float-right ml-4" src={KMHeadshot} height="256" width="256" />
             My name is Kyle Marple, and until recently I was a staff software engineer at Walmart Global Tech. I am
             currently looking for a new role as either a senior or staff frontend software engineer. At this time, I am
             considering only fully remote, full-time positions. Please do not contact me regarding part-time, contract
