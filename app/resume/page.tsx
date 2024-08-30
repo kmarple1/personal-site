@@ -1,9 +1,7 @@
 import { ReactNode } from "react";
 import Image from "next/image";
+
 import { EnvelopeOpenIcon, PhoneIcon } from "@heroicons/react/20/solid";
-import KMHeadshot from "../images/km-headshot.jpg";
-import LinkedIn from "../images/linked-in.svg";
-import GitHubIcon from "../images/github-mark.svg";
 
 const InnerList = ({ children }: { children: ReactNode }) => <ul className="my-0.5">{children}</ul>;
 const InnerListItem = ({ children }: { children: ReactNode }) => <li className="my-0.5">{children}</li>;
@@ -15,7 +13,13 @@ const Resume = () => {
     <article className="prose">
       <h1>My Resume</h1>
       <section>
-        <Image alt="photo of Kyle Marple" className="ml-4 lg:float-right" src={KMHeadshot} height="180" width="180" />
+        <Image
+          alt="photo of Kyle Marple"
+          className="my-0 ml-4 lg:float-right"
+          src={"/images/km-headshot.jpg"}
+          height="216"
+          width="216"
+        />
         <h2>Kyle Marple</h2>
         <a className="align-center link-hover link mb-4 flex" href="mailto:kmarple1@hotmail.com">
           <EnvelopeOpenIcon className="mr-6 size-6" /> kmarple1@hotmail.com
@@ -24,10 +28,24 @@ const Resume = () => {
           <PhoneIcon className="mr-6 size-6" /> 972-955-4039
         </a>
         <a className="align-center link-hover link mb-4 flex" href="https://linkedin.com/in/kylemarple" target="_blank">
-          <LinkedIn className="mr-6 size-6" /> linkedin.com/in/kylemarple
+          <Image
+            alt="LinkedIn logo"
+            className="link-hover link my-0 mr-6 size-6"
+            src="/images/linked-in.svg"
+            height="24"
+            width="24"
+          />
+          linkedin.com/in/kylemarple
         </a>
         <a className="align-center link-hover link mb-4 flex" href="https://github.com/kmarple1" target="_blank">
-          <GitHubIcon className="link-hover link mr-6 size-6" /> github.com/kmarple1
+          <Image
+            alt="Github logo"
+            className="link-hover link my-0 mr-6 size-6"
+            src="/images/github-mark.svg"
+            height="24"
+            width="24"
+          />
+          github.com/kmarple1
         </a>
       </section>
 

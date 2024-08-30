@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Root Layout has expected metadata 1`] = `
+{
+  "description": "A personal site to serve as a resume and portfolio for Kyle Marple (me)",
+  "title": "Kyle Marple - Personal Site and Portfolio",
+}
+`;

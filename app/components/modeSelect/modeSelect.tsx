@@ -1,6 +1,7 @@
 "use client";
 
 import * as React from "react";
+
 import { ComputerDesktopIcon, MoonIcon, SunIcon } from "@heroicons/react/20/solid";
 import { useTheme } from "next-themes";
 
@@ -24,17 +25,22 @@ const ModeSelect = () => {
         Theme
       </label>
       <div aria-labelledby="select-label" className="btn btn-ghost" id="select-button" role="button" tabIndex={0}>
-        <SunIcon className="size-6 dark:hidden" />
-        <MoonIcon className="hidden size-6 dark:block" />
+        <SunIcon aria-hidden={resolvedTheme === "dark"} className="size-6 dark:hidden" title="Light" />
+        <MoonIcon aria-hidden={resolvedTheme !== "dark"} className="hidden size-6 dark:block" title="Dark" />
       </div>
       <ul
-        className="menu dropdown-content menu-sm z-[1] mt-3 w-32 rounded-box bg-base-200 p-2 shadow"
+        className="menu dropdown-content menu-sm z-[1] mt-3 rounded-box bg-base-200 p-2 shadow"
         role="menu"
         tabIndex={0}
       >
         {options.map((option, i) => (
-          <li key={option.label} aria-selected={i === selectedIndex} role="option">
-            <button className={`${i === selectedIndex ? "active" : ""}`} onClick={() => handleSelect(option.label)}>
+          <li key={option.label}>
+            <button
+              aria-selected={i === selectedIndex}
+              role="option"
+              className={`${i === selectedIndex ? "active" : ""} w-full`}
+              onClick={() => handleSelect(option.label)}
+            >
               <option.Icon className="size-6" />
               <span className="pl-2">{option.label}</span>
             </button>
