@@ -13,7 +13,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Kyle Marple - Personal Site and Portfolio",
   description: "A personal site to serve as a resume and portfolio for Kyle Marple (me)",
-  manifest: "/personal-site/manifest.json",
+  manifest: "/manifest.json",
 };
 
 // istanbul ignore next: RTL won't support testing this component because of the <html> wrapper
