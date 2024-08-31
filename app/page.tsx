@@ -22,7 +22,7 @@ const Home = () => {
             <Image
               alt="photo of Kyle Marple"
               className="float-right my-0 ml-4"
-              src="/images/km-headshot.jpg"
+              src="/personal-site/images/km-headshot.jpg"
               height="256"
               width="256"
             />

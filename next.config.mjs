@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // basePath: "/personal-site",
+  basePath: "/personal-site",
   images: {
     unoptimized: true,
   },
