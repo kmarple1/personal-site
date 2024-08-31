@@ -56,7 +56,7 @@ const Home = () => {
             This site is a React app being deployed to Github Pages. The full source code is available in its git
             repository, accessible by clicking the Github icon in the right side of the header. Among other things, this
             site has been designed mobile-first and is fully responsive and screen-reader accessible. Feel free to try
-            it in a variety of different sizes. It also full support for light- and dark-mode themes, which can be
+            it in a variety of different sizes. It also has full support for light- and dark-mode themes, which can be
             switched from the header. The major packages and frameworks used are listed below:
           </p>
           <p>Core</p>
