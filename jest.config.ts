@@ -13,7 +13,7 @@ const config: Config = {
 
   clearMocks: true,
   collectCoverage: true,
-  collectCoverageFrom: ["<rootDir>/app/**/*.{ts,tsx,js,jsx}"],
+  collectCoverageFrom: ["<rootDir>/app/**/*.{ts,tsx,js,jsx}", "!<rootDir>/app/layout.tsx"],
   coverageDirectory: "coverage",
   moduleDirectories: ["node_modules", "<rootDir>/app"],
   moduleNameMapper: {

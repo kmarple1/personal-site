@@ -4,7 +4,7 @@ import Script from "next/script";
 
 import { ThemeProvider } from "next-themes";
 
-import Header from "./components/header/header";
+import InnerLayout from "./innerLayout";
 
 import "./globals.css";
 
@@ -13,22 +13,6 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Kyle Marple - Personal Site and Portfolio",
   description: "A personal site to serve as a resume and portfolio for Kyle Marple (me)",
-};
-
-// separate export of testable content
-export const Layout = ({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) => {
-  return (
-    <div className="flex h-full w-full flex-col bg-base-100 text-base-content">
-      <Header />
-      <div className="w-full">
-        <main className="mx-auto max-w-8xl p-4 sm:px-6 md:px-8">{children}</main>
-      </div>
-    </div>
-  );
 };
 
 // istanbul ignore next: RTL won't support testing this component because of the <html> wrapper
@@ -47,7 +31,7 @@ const RootLayout = ({
           document.documentElement.classList.add(theme)
         `}</Script>
         <ThemeProvider>
-          <Layout>{children}</Layout>
+          <InnerLayout>{children}</InnerLayout>
         </ThemeProvider>
       </body>
     </html>

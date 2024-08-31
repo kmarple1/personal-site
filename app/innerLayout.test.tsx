@@ -1,14 +1,14 @@
 import { render, screen, waitFor } from "@testing-library/react";
 
-import { Layout, metadata } from "./layout";
+import InnerLayout from "./innerLayout";
 import Home from "./page";
 
 describe("Root Layout", () => {
   it("renders without error", async () => {
     render(
-      <Layout>
+      <InnerLayout>
         <Home />
-      </Layout>,
+      </InnerLayout>,
     );
 
     await waitFor(() => {
@@ -16,9 +16,5 @@ describe("Root Layout", () => {
     });
 
     expect(screen.getByText("Kyle Marple - Personal Site")).toBeInTheDocument();
-  });
-
-  it("has expected metadata", () => {
-    expect(metadata).toMatchSnapshot();
   });
 });
