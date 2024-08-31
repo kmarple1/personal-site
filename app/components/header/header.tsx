@@ -60,7 +60,7 @@ const Header = () => {
           href="https://github.com/kmarple1/personal-site"
           target="_blank"
         >
-          <Github className="size-6 bg-base-100" />
+          <Github className="size-6 bg-transparent" />
         </Link>
       </div>
     </div>
