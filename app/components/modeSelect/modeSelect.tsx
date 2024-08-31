@@ -11,6 +11,9 @@ const options = [
   { label: "System", Icon: ComputerDesktopIcon },
 ];
 
+/**
+ * Displays a theme selection dropdown with an icon indicating the currently selected theme.
+ */
 const ModeSelect = () => {
   const { resolvedTheme, setTheme } = useTheme();
   const selectedIndex = resolvedTheme === "dark" ? 1 : 0;

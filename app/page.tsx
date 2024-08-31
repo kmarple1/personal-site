@@ -78,6 +78,7 @@ const Home = () => {
             <li>Husky</li>
             <li>Jest</li>
             <li>React Testing Library</li>
+            <li>Storybook</li>
             <li>Stylelint</li>
           </ul>
         </section>

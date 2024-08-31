@@ -1,9 +1,3 @@
-/**
- * Responsive Header
- *
- * This component will show centered links when viewed on a larger screen. However,
- * when viewed on a small screen, the centered links will be replaced by a hamburger menu.
- */
 "use client";
 
 import dynamic from "next/dynamic";
@@ -22,6 +16,10 @@ const navItems = [
   },
 ];
 
+/**
+ * This component will show centered links when viewed on a larger screen. However,
+ * when viewed on a small screen, the centered links will be replaced by a hamburger menu.
+ */
 const Header = () => {
   const renderNavItems = () =>
     navItems.map((navItem) => (

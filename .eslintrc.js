@@ -1,6 +1,12 @@
 module.exports = {
   root: true,
-  extends: ["eslint:recommended", "plugin:jsx-a11y/recommended", "next/core-web-vitals", "plugin:prettier/recommended"],
+  extends: [
+    "eslint:recommended",
+    "plugin:jsx-a11y/recommended",
+    "next/core-web-vitals",
+    "plugin:prettier/recommended",
+    "plugin:storybook/recommended",
+  ],
   globals: {
     React: true,
   },
