@@ -19,7 +19,7 @@ const Resume = () => {
         <Image
           alt="photo of Kyle Marple"
           className="my-0 ml-4 lg:float-right"
-          src={"/personal-site/images/km-headshot.jpg"}
+          src={"/images/km-headshot.jpg"}
           height="216"
           width="216"
         />
