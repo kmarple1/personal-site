@@ -13,9 +13,12 @@ const config: Config = {
 
   clearMocks: true,
   collectCoverage: true,
-  collectCoverageFrom: ["**/app/**/*.{ts,tsx,js,jsx}"],
+  collectCoverageFrom: ["<rootDir>/app/**/*.{ts,tsx,js,jsx}"],
   coverageDirectory: "coverage",
-  moduleDirectories: ["node_modules", "<rootDir>/"],
+  moduleDirectories: ["node_modules", "<rootDir>/app"],
+  moduleNameMapper: {
+    "^.+\\.(svg)$": "<rootDir>/__mocks__/svg.js",
+  },
   setupFilesAfterEnv: ["<rootDir>/test-utils/jest.setup.ts"],
   testEnvironment: "jsdom",
 };

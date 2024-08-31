@@ -3,6 +3,9 @@ import Image from "next/image";
 
 import { EnvelopeOpenIcon, PhoneIcon } from "@heroicons/react/20/solid";
 
+import Github from "../../public/images/github-mark.svg";
+import LinkedIn from "../../public/images/linked-in.svg";
+
 const InnerList = ({ children }: { children: ReactNode }) => <ul className="my-0.5">{children}</ul>;
 const InnerListItem = ({ children }: { children: ReactNode }) => <li className="my-0.5">{children}</li>;
 const InnerHeading = ({ children }: { children: ReactNode }) => <h4 className="mb-0.5">{children}</h4>;
@@ -28,23 +31,11 @@ const Resume = () => {
           <PhoneIcon className="mr-6 size-6" /> 972-955-4039
         </a>
         <a className="align-center link-hover link mb-4 flex" href="https://linkedin.com/in/kylemarple" target="_blank">
-          <Image
-            alt="LinkedIn logo"
-            className="link-hover link my-0 mr-6 size-6"
-            src="/images/linked-in.svg"
-            height="24"
-            width="24"
-          />
+          <LinkedIn className="link-hover link my-0 mr-6 size-6 bg-base-100" />
           linkedin.com/in/kylemarple
         </a>
         <a className="align-center link-hover link mb-4 flex" href="https://github.com/kmarple1" target="_blank">
-          <Image
-            alt="Github logo"
-            className="link-hover link my-0 mr-6 size-6"
-            src="/images/github-mark.svg"
-            height="24"
-            width="24"
-          />
+          <Github className="link-hover link my-0 mr-6 size-6 bg-base-100" />
           github.com/kmarple1
         </a>
       </section>

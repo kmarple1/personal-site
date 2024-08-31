@@ -7,10 +7,11 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import Image from "next/image";
 import Link from "next/link";
 
 import { Bars3Icon } from "@heroicons/react/20/solid";
+
+import Github from "../../../public/images/github-mark.svg";
 
 const ModeSelect = dynamic(() => import("../modeSelect/modeSelect"), { ssr: false });
 
@@ -59,7 +60,7 @@ const Header = () => {
           href="https://github.com/kmarple1/personal-site"
           target="_blank"
         >
-          <Image alt="github" className="size-6" src="/images/github-mark.svg" width="24" height="24" />
+          <Github className="size-6 bg-base-100" />
         </Link>
       </div>
     </div>
