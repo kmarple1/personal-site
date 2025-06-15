@@ -60,6 +60,19 @@ const Resume = () => {
         <h3>Experience</h3>
         <ul className="list-none">
           <li>
+            <InnerHeading>Lead Software Engineer</InnerHeading>
+            <InnerLineItem>Fortitude Systems - Contract</InnerLineItem>
+            <InnerLineItem>December 2024 - Present</InnerLineItem>
+            <InnerList>
+              <InnerListItem>
+                Worked with client to implement automated linting and testing processes for pull requests.
+              </InnerListItem>
+              <InnerListItem>
+                Lead initiatives to address technical debt, enhancing code quality and maintainability.
+              </InnerListItem>
+            </InnerList>
+          </li>
+          <li>
             <InnerHeading>Staff Software Engineer</InnerHeading>
             <InnerLineItem>Walmart Global Tech</InnerLineItem>
             <InnerLineItem>May 2024 - August 2024 (4 months)</InnerLineItem>
