@@ -43,16 +43,10 @@ const Resume = () => {
       <section>
         <h3>Summary</h3>
         <p>
-          At Walmart Global Tech, my tenure was marked by spearheading the development of My Assistant, a GenAI-powered
-          virtual assistant revolutionizing associate workflows. My technical leadership saw the successful
-          international deployment of this tool, creating tangible efficiencies with an estimated 22.5k hours saved
-          since its launch.
-        </p>
-        <p>
-          My expertise in React.js (7 years) and React Native (3 years) was crucial in driving forward our web
-          application initiatives. My approach is rooted in architecting scalable solutions that not only enhance user
-          engagement but also embody innovation, culminating in receiving the FY24 Tech Forward Award for outstanding
-          contributions to our technology landscape.
+          Lead/Staff Frontend Software Engineer with strong expertise in React.js and React Native, driving web
+          application initiatives at Walmart Global Tech and Fortitude Systems. Spearheaded the development of My
+          Assistant, a GenAI-powered virtual assistant, enhancing workflows and saving significant hours. Recognized for
+          architecting scalable solutions that boost user engagement and innovation.
         </p>
       </section>
 
@@ -60,15 +54,17 @@ const Resume = () => {
         <h3>Experience</h3>
         <ul className="list-none">
           <li>
-            <InnerHeading>Lead Software Engineer</InnerHeading>
+            <InnerHeading>Lead Software Engineer (Frontend)</InnerHeading>
             <InnerLineItem>Fortitude Systems - Contract</InnerLineItem>
             <InnerLineItem>December 2024 - Present</InnerLineItem>
             <InnerList>
               <InnerListItem>
-                Worked with client to implement automated linting and testing processes for pull requests.
+                Led initiatives to address technical debt, enhancing code quality and maintainability, resulting in more
+                efficient development cycles
               </InnerListItem>
               <InnerListItem>
-                Lead initiatives to address technical debt, enhancing code quality and maintainability.
+                Implemented automated linting and testing processes for pull requests using CI/CD pipelines, which
+                improved code quality and reduced manual review time
               </InnerListItem>
             </InnerList>
           </li>
@@ -78,10 +74,17 @@ const Resume = () => {
             <InnerLineItem>May 2024 - August 2024 (4 months)</InnerLineItem>
             <InnerList>
               <InnerListItem>
-                Technical lead and architect for My Assistant, Walmart&apos;s GenAI-powered virtual assistant.
+                Led and architected the development of My Assistant, Walmart&apos;s GenAI-powered virtual assistant,
+                using React.js, React Native and TypeScript
               </InnerListItem>
-              <InnerListItem>Available to over 75k US and international associates across 10 countries.</InnerListItem>
-              <InnerListItem>Estimated 22.5k hours saved since launch in August 2023.</InnerListItem>
+              <InnerListItem>
+                Expanded the availability of My Assistant to over 75k US and international associates across 10
+                countries, improving accessibility and support
+              </InnerListItem>
+              <InnerListItem>
+                An estimated 22.5k hours were saved in the first year by streamlining processes and enhancing virtual
+                assistant capabilities
+              </InnerListItem>
             </InnerList>
           </li>
           <li>
@@ -89,15 +92,19 @@ const Resume = () => {
             <InnerLineItem>Walmart Global Tech</InnerLineItem>
             <InnerLineItem>Oct 2022 - May 2024 (1 year 8 months)</InnerLineItem>
             <InnerList>
-              <InnerListItem>Lead frontend developer for My Assistant.</InnerListItem>
+              <InnerListItem>
+                Led the frontend development for My Assistant using React.js, React Native and TypeScript, enhancing
+                user experience and interface design
+              </InnerListItem>
               <InnerListItem>
                 Oversaw the international rollout of My Assistant to 10 countries, including the United States, Canada,
-                Mexico and South Africa.
+                Mexico and South Africa
               </InnerListItem>
+              <InnerListItem>Oversaw rollout of My Assistant to Sam&apos;s Club associates in Q1 of FY25</InnerListItem>
               <InnerListItem>
-                Oversaw rollout of My Assistant to Sam&apos;s Club associates in Q1 of FY25.
+                Received the FY24 Tech Forward Award from Walmart CTO for leading the My Assistant project that
+                significantly enhanced user productivity
               </InnerListItem>
-              <InnerListItem>Received FY24 Tech Forward Award from Walmart CTO.</InnerListItem>
             </InnerList>
           </li>
           <li>
@@ -106,13 +113,16 @@ const Resume = () => {
             <InnerLineItem>Jan 2020 - Oct 2022 (2 years 10 months)</InnerLineItem>
             <InnerList>
               <InnerListItem>
-                Overhauled and expanded the React-based chatbot that would eventually become My Assistant,
-                Walmart&apos;s in-house GenAI tool.
+                Overhauled and expanded a React-based chatbot that would become My Assistant, enhancing user interaction
+                and support
               </InnerListItem>
               <InnerListItem>
-                Developed and enforced coding standards, linting and automated testing to ensure code quality.
+                Developed and enforced coding standards, linting and automated testing to ensure code quality
               </InnerListItem>
-              <InnerListItem>Built mobile version of the chatbot using TypeScript and React Native.</InnerListItem>
+              <InnerListItem>
+                Built the mobile version of the chatbot using TypeScript and React Native, enhancing accessibility and
+                user engagement on mobile platforms
+              </InnerListItem>
             </InnerList>
           </li>
           <li>
@@ -121,7 +131,8 @@ const Resume = () => {
             <InnerLineItem>Sep 2017 - Jan 2020 (2 years 5 months)</InnerLineItem>
             <InnerList>
               <InnerListItem>
-                Worked on a number of JavaScript-based software development projects using Node.js and React.
+                Developed JavaScript-based software projects using Node.js and React, enhancing application performance
+                and user experience
               </InnerListItem>
             </InnerList>
           </li>
@@ -130,7 +141,11 @@ const Resume = () => {
             <InnerLineItem>The University of Texas at Dallas</InnerLineItem>
             <InnerLineItem>Sep 2014 - Aug 2017 (3 years)</InnerLineItem>
             <InnerList>
-              <InnerListItem>Research and development related to Datalog Answer Set Programming.</InnerListItem>
+              <InnerListItem>
+                Conducted research and development on Datalog Answer Set Programming, resulting in the creation of
+                s(ASP), the first system to support ungrounded answer set programs, which improved the expressiveness
+                and complexity of programs that could be developed
+              </InnerListItem>
             </InnerList>
           </li>
         </ul>
